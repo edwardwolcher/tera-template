@@ -2,13 +2,13 @@
   "name": "tera-template",
   "displayName": "Tera Template",
   "description": "Formatting, Syntax Highlighting, Hover, and Snippets for Tera",
-  "version": "0.5.2",
+  "version": "0.0.1",
   "repository": {
     "type": "git",
     "url": "https://github.com/eseom/tera-template"
   },
   "license": "MIT",
-  "publisher": "eseom",
+  "publisher": "edwardwolcher",
   "engines": {
     "vscode": "^1.19.0"
   },
