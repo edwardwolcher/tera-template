@@ -1,11 +1,11 @@
 {
-  "name": "nunjucks-template",
-  "displayName": "Nunjucks Template",
-  "description": "Formatting, Syntax Highlighting, Hover, and Snippets for Nunjucks",
+  "name": "tera-template",
+  "displayName": "Tera Template",
+  "description": "Formatting, Syntax Highlighting, Hover, and Snippets for Tera",
   "version": "0.5.2",
   "repository": {
     "type": "git",
-    "url": "https://github.com/eseom/nunjucks-template"
+    "url": "https://github.com/eseom/tera-template"
   },
   "license": "MIT",
   "publisher": "eseom",
@@ -17,14 +17,14 @@
   ],
   "icon": "images/icon.png",
   "activationEvents": [
-    "onLanguage:njk"
+    "onLanguage:tera"
   ],
   "main": "./out/extension",
   "contributes": {
     "configuration": {
-      "title": "NunjucksTemplate",
+      "title": "TeraTemplate",
       "properties": {
-        "nunjucksTemplate.preserveEmptyLine": {
+        "teraTemplate.preserveEmptyLine": {
           "type": "number",
           "default": 0,
           "description": "empty lines number to keep at formatting"
@@ -33,39 +33,39 @@
     },
     "snippets": [
       {
-        "language": "njk",
+        "language": "tera",
         "path": "./assets/snippets/snippets.json"
       }
     ],
     "commands": [],
     "languages": [
       {
-        "id": "njk",
+        "id": "tera",
         "aliases": [
-          "Nunjucks",
-          "njk"
+          "Tera",
+          "tera"
         ],
         "extensions": [
-          ".njk"
+          ".tera"
         ],
         "configuration": "./assets/languages/configuration.json"
       }
     ],
     "grammars": [
       {
-        "language": "njk",
-        "scopeName": "source.njk",
-        "path": "./assets/syntaxes/njk.json"
+        "language": "tera",
+        "scopeName": "source.tera",
+        "path": "./assets/syntaxes/tera.json"
       },
       {
-        "language": "njk",
+        "language": "tera",
         "scopeName": "source.html",
         "path": "./assets/syntaxes/html.json"
       },
       {
-        "language": "njk",
-        "scopeName": "text.html.njk",
-        "path": "./assets/syntaxes/njk-html.json"
+        "language": "tera",
+        "scopeName": "text.html.tera",
+        "path": "./assets/syntaxes/tera-html.json"
       }
     ]
   },

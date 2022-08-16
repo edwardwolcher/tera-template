@@ -1,11 +1,11 @@
-# nunjucks-template
+# tera-template
 
-This is the Nunjucks-supporting extension for vscode with complete features.
+This is a port of [eseom's excellent Nunjucks Template extension](https://github.com/eseom/nunjucks-template) for the Tera template language and the Zola ssg. 
 
 # feature
 
-- nunjucks template syntax
-- nunjucks formatter with prettydiff2
+- tera template syntax
+- tera formatter with prettydiff2
 - yaml syntax
 
 ## configurations
@@ -16,7 +16,7 @@ This is the Nunjucks-supporting extension for vscode with complete features.
 #### extension's own configurations
 
 ```json
-"nunjucksTemplate.preserveEmptyLine": 3
+"teraTemplate.preserveEmptyLine": 3
 ```
 
 (suggested at issue PR #30 by @sdegutis)
@@ -25,15 +25,15 @@ This is the Nunjucks-supporting extension for vscode with complete features.
 
 ```json
 "files.associations": {
-  "*.html": "njk"
+  "*.html": "tera"
 },
 ```
 
-- For vscode embedded emmet, notify that `njk` is html file type
+- For vscode embedded emmet, notify that `tera` is html file type
 
 ```json
 "emmet.includeLanguages": {
-  "njk": "html"
+  "tera": "html"
 },
 ```
 
@@ -47,7 +47,7 @@ This is the Nunjucks-supporting extension for vscode with complete features.
 
 ```json
 "vsicons.associations.files": [
-  { "icon": "nunjucks", "extensions": ["njk"], "format": "svg" }
+  { "icon": "tera", "extensions": ["tera"], "format": "svg" }
 ],
 ```
 
@@ -55,7 +55,7 @@ This is the Nunjucks-supporting extension for vscode with complete features.
 
 ```json
 "material-icon-theme.files.associations": {
-  "*.html": "nunjucks"
+  "*.html": "tera"
 },
 ```
 
@@ -63,13 +63,13 @@ This is the Nunjucks-supporting extension for vscode with complete features.
 
 | Trigger   | Snippet                             |
 | --------- | ----------------------------------- |
-| n-extends | {% extends '${name}' %}             |
-| n-block   | {% block ${name} %}{% endblock %}   |
-| n-if      | {% if condition %}{% endif %}       |
-| n-for     | {% for ${condition} %}{% endfor %}  |
-| n-macro   | {% macro ${name}() %}{% endmacro %} |
+| t-extends | {% extends '${name}' %}             |
+| t-block   | {% block ${name} %}{% endblock %}   |
+| t-if      | {% if condition %}{% endif %}       |
+| t-for     | {% for ${condition} %}{% endfor %}  |
+| t-macro   | {% macro ${name}() %}{% endmacro %} |
 
 ## links
 
 - https://github.com/eseom/nunjucks-template
-- https://marketplace.visualstudio.com/items?itemName=eseom.nunjucks-template#overview
+- https://github.com/edwardwolcher/tera-template
